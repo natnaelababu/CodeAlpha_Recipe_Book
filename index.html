@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Recipe Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Organizer</h1>
+        <div class="form-container">
+            <input type="text" id="title" placeholder="Recipe Title">
+            <textarea id="ingredients" placeholder="Ingredients"></textarea>
+            <textarea id="instructions" placeholder="Instructions"></textarea>
+            <button onclick="addRecipe()">Add Recipe</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Find recipes">
+            <button onclick="searchRecipes()">Search</button>
+            
+        </div>
+        <ul id="recipeList"></ul>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
